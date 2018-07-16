@@ -6,6 +6,7 @@ var missed = 0;
 var btn = document.querySelector('.btn__reset');
 var ol=document.querySelector('ol');
 var li=document.querySelectorAll('ol li');
+var img = document.querySelectorAll('ol li img');
 
 var bt=document.createElement('button');
 
@@ -96,7 +97,9 @@ q.addEventListener('click', (event) => {
        checkLetter(b);
         
         if (checkLetter(b)===null) 
-            {  ol.removeChild(li[missed]);
+            {  
+//                ol.removeChild(li[missed]);
+               img[missed]['src']="images/lostHeart.png";
                 missed+=1;
         }    
        
