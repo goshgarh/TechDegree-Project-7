@@ -109,6 +109,11 @@ button {
   justify-content: center;
 }
 
+.keyrow button:hover {
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+
 .chosen {
   background: var(--color-neutral);
   border-radius: 5px;
